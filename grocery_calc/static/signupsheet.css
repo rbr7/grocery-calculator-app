@@ -1,0 +1,29 @@
+*{
+margin:0px 10px 0px 0px;
+padding:0px;
+}
+
+body{
+background-color : #efd0c6;
+}
+
+#top{
+width: 100%;
+background-color : #fa959f;
+height:40px;
+padding: 5px 20px;
+font : bold 30px Helvetica, serif;
+}
+
+#text{
+font : bold 20px Helvetica;
+position :relative;
+margin : 20px;
+}
+
+
+button{
+border : 2px solid blue;
+background-color: lightgrey;
+font-size: 25px;
+}

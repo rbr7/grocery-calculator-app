@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Log_In</title>
+</head>
+<body>
+    <h1>Log In</h1>
+    <p></p>
+    <h2>So you made it to the login page. Goood</h2>
+    <h3>{{text}}</h3>
+<form name = "form" action = "{% url "gtracker.views.login" %}" method = "POST" >{% csrf_token %}
+
+    <input type = "text"  placeholder = "Email id" name = "emailid" >
+    </br>
+    <input type = "password" placeholder = "Password" name = "password" >
+    </br>
+</br>
+    <input type = "submit" value = "Go ahead">
+</form>
+</body>
+</html>

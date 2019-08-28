@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link type="text/css" rel="stylesheet" href="/static/signupsheet.css"/>
+    <meta charset="UTF-8">
+    <title>SIGN-UP</title>
+</head>
+
+<body>
+<div id="top">
+    Grocery Tracker
+</div>
+
+<div id = "text">
+<h2> SIGN UP - IT'S FREE</h2> </br></br>
+    {{text}} <br/>
+<br/>
+<form id = "form" action = "{% url "gtracker.views.signup" %}" method = "POST" >{% csrf_token %}
+Username: <input type="text" name="username"> </br> </br>
+<p></p>
+Email-id:  <input type="text" name="emailid"></br> </br>
+<p></p>
+Phone Number: <input type="text" name="phoneno"></br> <br/>
+<p></p>
+Password: <input type="password" name="password"></br> <br/>
+<p></p>
+
+<button type ="submit" value="Sign me up"> Sign me up</button>
+<p></p>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="/static/addg.css"/>
+    <title>Add Groceries</title>
+</head>
+<body>
+<div id="top">
+    Grocery Tracker
+</div>
+<div id="textietext">
+<h2>Hi. Ready to add your own groceries?<br/></h2>
+</div>
+<div id="form1">
+<p><h3>Choose from Popular groceries</h3></p>
+    </br>
+<form name="form" action="{% url "gtracker.views.addg" %}" method="POST"> {% csrf_token %}
+Coffee  <input type="checkbox" name="coffee">
+Quantity <input type="text" name="quantityc">
+<select name="uqc" id="uqc">
+    <option value="spoons"> spoons</option>
+    <option value="grams"> grams</option>
+    <option value="cups">cups</option>
+    <option value="litres">litres</option>
+</select>
+Weekly consumption<input type="text" name="wcc">
+<select name="uwc" id="uwc">
+    <option value="spoons"> spoons</option>
+    <option value="grams"> grams</option>
+    <option value="cups">cups</option>
+    <option value="litres">litres</option>
+</select>
+</br>
+    Rice  &nbsp <input type="checkbox" name="rice">
+  Quantity<input type="text" name="quantityr">
+<select name="uqr" id="uqr">
+    <option value="spoons"> spoons</option>
+    <option value="grams"> grams</option>
+    <option value="cups">cups</option>
+    <option value="litres">litres</option>
+</select>
+Weekly consumption<input type="text" name="wcr">
+<select name="uwr" id="uwr">
+    <option value="spoons"> spoons</option>
+    <option value="grams"> grams</option>
+    <option value="cups">cups</option>
+    <option value="litres">litres</option>
+</select>
+</br>
+
+Sugar <input type="checkbox" name="sugar">
+Quantity<input type="text" name="quantitys">
+<select name="uqs" id="uqs">
+    <option value="spoons"> spoons</option>
+    <option value="grams"> grams</option>
+    <option value="cups">cups</option>
+    <option value="litres">litres</option>
+</select>
+Weekly consumption<input type="text" name="wcs">
+<select name="uws" id="uws">
+    <option value="spoons"> spoons</option>
+    <option value="grams"> grams</option>
+    <option value="cups">cups</option>
+    <option value="litres">litres</option>
+</select>
+</br>
+
+Pulses <input type="checkbox" name="pulses">
+Quantity<input type="text" name="quantityp">
+<select name="uqp" id="uqp">
+    <option value="spoons"> spoons</option>
+    <option value="grams"> grams</option>
+    <option value="cups">cups</option>
+    <option value="litres">litres</option>
+</select>
+Weekly consumption<input type="text" name="wcp">
+<select name="uwp" id="uwp">
+    <option value="spoons"> spoons</option>
+    <option value="grams"> grams</option>
+    <option value="cups">cups</option>
+    <option value="litres">litres</option>
+</select>
+</br>
+    </br>
+<button type = "submit" >Good to go</button>
+</form>
+
+</div>
+<div id="form2">
+<h3>Add your own grocery item. So simple.</h3>
+</br>
+<form name="form" action="{% url "gtracker.views.addgown" %}" method="POST"> {% csrf_token %}
+
+Name of grocery <input type="text" name="g1">
+Quantity <input type="text" name="q1">
+<select name="uq1" id="uq1">
+    <option value="spoons"> spoons</option>
+    <option value="grams"> grams</option>
+    <option value="cups">cups</option>
+    <option value="litres">litres</option>
+</select>
+Weekly consumption<input type="text" name="wc1">
+<select name="uw1" id="uw1">
+    <option value="spoons"> spoons</option>
+    <option value="grams"> grams</option>
+    <option value="cups">cups </option>
+    <option value="litres">litres</option>
+</select>
+</br>
+
+Name of grocery <input type="text" name="g2">
+Quantity <input type="text" name="q2">
+<select name="uq2" id="uq2">
+    <option value="spoons"> spoons</option>
+    <option value="grams"> grams</option>
+    <option value="cups">cups</option>
+    <option value="litres">litres</option>
+</select>
+Weekly consumption<input type="text" name="wc2">
+<select name="uw2" id="uw2">
+    <option value="spoons">spoons</option>
+    <option value="grams">grams</option>
+    <option value="cups">cups</option>
+    <option value="litres">litres</option>
+</select>
+<br/>
+
+Name of grocery <input type="text" name="g3">
+Quantity <input type="text" name="q3">
+<select name="uq3" id="uq3">
+    <option value="spoons"> spoons</option>
+    <option value="grams"> grams</option>
+    <option value="cups">cups</option>
+    <option value="litres">litres</option>
+</select>
+Weekly consumption <input type="text" name="wc3">
+<select name="uw3" id="uw3">
+    <option value="spoons">spoons</option>
+    <option value="grams">grams</option>
+    <option value="cups">cups</option>
+    <option value="litres">litres</option>
+</select>
+</br>
+</br>
+<button type = "submit" >Good to go</button>
+</div>
+</form>
+</body>
+</html>

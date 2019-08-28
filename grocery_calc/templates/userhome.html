@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link type="text/css" rel="stylesheet" href="/static/userhomesheet.css"/>
+    <meta charset="UTF-8">
+    <title>Your groceries</title>
+</head>
+<body>
+
+<div id="top">
+    Grocery Tracker
+</div>
+
+<div id="text">
+
+
+      <div id="date">
+{{date}}
+        </div>
+    <p style="font-family :Verdana; font-size: 23px">Welcome {{username}} </p></br>
+</a>
+</br>
+
+</br>
+Your added groceries are </br>
+
+
+
+{{text}}
+</br>
+
+{% for i,j,k,l,m in plist %}
+*  Item: {{i}} </br>
+ Quantity left : {{j}} {{k}} </br>
+ Your weekly consumption: {{l}} {{m}}</br>
+</br>
+{% endfor %}
+
+
+
+{% for i,j,k,l,m in plist1 %}
+*  Item: {{i}} </br>
+ Quantity left : {{j}} {{k}} </br>
+ Your weekly consumption: {{l}} {{m}}</br>
+</br>
+{% endfor %}
+
+<button>
+    <a href = "/gtracker/addg/">Add new groceries!</a></br>
+</button>
+
+
+
+</div>
+</body>
+</html>

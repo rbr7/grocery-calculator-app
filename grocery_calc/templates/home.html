@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link type="text/css" rel="stylesheet" href="/static/homesheet.css"/>
+    <meta charset="UTF-8">
+    <title>G-TRACKER</title>
+</head>
+<body>
+    <div id="top">
+        <p style="color: black"> Welcome to Grocery Tracker</p>
+
+
+
+    </div>
+
+
+<div  id="login">
+<form name = "form" action = "{% url "gtracker.views.login" %}" method = "POST" >{% csrf_token %}
+
+    <input type = "text"  placeholder = "Email id" name = "emailid" >
+    <input type = "password" placeholder = "Password" name = "password" >
+    <input type = "submit" value = "Login">
+</div>
+
+    <div id="text">
+        <p style="color:#13084B">Track your groceries like a pro!</br>
+Easy. Fast. Reliable.</br>
+            </p>
+        </br>
+
+
+    <button>
+<a href="/gtracker/signup">Sign up Today</a></br>
+    </button>
+
+        </div>
+
+    <p style ="margin:20px;">
+<img src="http://nikolainuthouse.com/wp-content/uploads/2013/07/groceries.png">
+</p>
+
+
+
+</body>
+
+</html>
